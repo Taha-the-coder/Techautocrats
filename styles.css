@@ -5,10 +5,29 @@
       --background-color: white;
   }
 /* Ensure consistent font family and size for header elements */
-header nav a,
-#mobile-menu-2 li a {
+body {
     font-family: Arial, sans-serif; /* Specify a fallback font family */
     font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Additional styles for specific elements if necessary */
+h1, h2, h3, h4, h5, h6 {
+    /* Apply specific styles for heading elements */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    /* Adjust other styles as needed */
+}
+
+p {
+    /* Apply specific styles for paragraph elements */
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    /* Adjust other styles as needed */
+}
+
+/* Apply consistent font styles for links */
+a {
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    font-size: 16px; /* Adjust the font size as needed */
+    /* Add other styles such as color, text-decoration, etc. */
 }
 
 header nav a {
