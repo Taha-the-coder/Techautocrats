@@ -4,6 +4,10 @@
       --secondary-color: #282c35;
       --background-color: white;
   }
+
+header nav a {
+    color: inherit; /* Ensures text color inherits from the parent */
+}
   
   body {
       font-family: 'Comic Sans MS', 'Comic Sans', cursive;
