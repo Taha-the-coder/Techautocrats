@@ -4,6 +4,12 @@
       --secondary-color: #282c35;
       --background-color: white;
   }
+/* Ensure consistent font family and size for header elements */
+header nav a,
+#mobile-menu-2 li a {
+    font-family: Arial, sans-serif; /* Specify a fallback font family */
+    font-size: 16px; /* Adjust the font size as needed */
+}
 
 header nav a {
     color: inherit; /* Ensures text color inherits from the parent */
