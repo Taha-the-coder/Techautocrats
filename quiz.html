@@ -58,7 +58,6 @@
     <h1>Tech Whiz Quiz</h1>
     <div id="question"></div>
     <div class="options" id="choices"></div>
-    <button id="submitBtn">Submit Answer</button>
     <div id="result"></div>
 </div>
 
@@ -140,9 +139,9 @@ function checkAnswer(answerIndex) {
     const question = questions[currentQuestion];
     if (answerIndex === question.choices.indexOf(question.answer)) {
         score++;
-        resultElement.textContent = "Correct!";
+        resultElement.textContent = "";
     } else {
-        resultElement.textContent = "Incorrect!";
+        resultElement.textContent = "";
     }
     currentQuestion++;
     if (currentQuestion < questions.length) {
@@ -155,7 +154,6 @@ function checkAnswer(answerIndex) {
 function endQuiz() {
     questionElement.textContent = "";
     choicesElement.innerHTML = "";
-    document.getElementById("submitBtn").style.display = "none";
     resultElement.textContent = `Quiz Over! Your score is ${score}/${questions.length}.`;
     if (score > 5) {
         resultElement.innerHTML += "<p>Congratulations! You've won a 20% discount coupon. Use code: TECHWIZ20</p>";
